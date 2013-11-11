@@ -1,0 +1,43 @@
+{ "attrs" : {
+	"strength" : "attribute",
+	"intelligence" : "attribute",
+	"endurance" : "attribute",
+	"power" : "derived",
+	"magic" : "derived",
+	"health" : "derived"
+}}
+
+{ "datatype" : {
+	"name" : "attribute",
+	"type" : "integer",
+	"minimum" : 8,
+	"maximum" : 25,
+}}
+
+{ "assignments" : {
+	"attrs.strength" : "STR",
+	"attrs.intelligence" : "INT",
+	"attrs.endurance" : "END"
+}}
+
+{ "formula" : {
+	"attrs.power" : "STR/3",
+	"attrs.magic" : "INT+20",
+	"attrs.health" : "END*5"
+}}
+
+{ "form" : {
+	"name" : "string",
+	"attributes" : "attrs",
+	"items" : "array of string",
+}}
+
+<html>
+<body>
+<div class="name>...</div>
+<div class="attributes"><div class="strength">...</div><div class="intelligence">....</div>etc....</div>
+<div class="items"></div>
+</body>
+</html>
+
+	
